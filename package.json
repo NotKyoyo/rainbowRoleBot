@@ -1,0 +1,23 @@
+{
+  "name": "rainbow",
+  "version": "1.0.0",
+  "description": "A simple rainbow bot discord + server change name.",
+  "main": "rainbow.js",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrinceRpz23/-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrinceRpz23/-/issues"
+  },
+  "homepage": "https://github.com/PrinceRpz23/-#readme"
+}
