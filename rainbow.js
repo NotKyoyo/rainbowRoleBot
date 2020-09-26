@@ -10,10 +10,10 @@ const roles = config.roleToDisco;
 client.on("ready", () => {
 
     function discoRole() {
-    const errlogchannel = client.channels.cache.get('759152662141992990');
+    const errlogchannel = client.channels.cache.get('');
     let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     roles.forEach((role) => {
-      let guild = client.guilds.cache.get("618307548465987596")
+      let guild = client.guilds.cache.get("")
       let theRole = guild.roles.cache.get(`${role}`);
       theRole.edit({color: random}).catch(e => {
         return errlogchannel.send(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
@@ -21,7 +21,7 @@ client.on("ready", () => {
     });
   }
 
-  const logchannel = client.channels.cache.get('759152662141992990');
+  const logchannel = client.channels.cache.get('');
     client.user.setActivity('master', { type: 'LISTENING' });
     logchannel.send("Booted");
 
@@ -43,17 +43,17 @@ client.on("message", message =>{
 client.on("message", message => {
     
 function rainbowRole() {
-    const errlogchannel = client.channels.cache.get('759152662141992990');
+    const errlogchannel = client.channels.cache.get('');
     let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     roles.forEach((role) => {
-      let guild = client.guilds.cache.get("618307548465987596")
+      let guild = client.guilds.cache.get("")
       let theRole = guild.roles.cache.get(`${role}`);
       theRole.edit({color: random}).catch(e => {
         return errlogchannel.send(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
       });
     });
   }
- const logchannelll = client.channels.cache.get('759152662141992990');
+ const logchannelll = client.channels.cache.get('');
 
 
   if(message.content.startsWith(prefix + "start")) {
