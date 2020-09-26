@@ -10,12 +10,13 @@ const roles = config.roleToDisco;
 client.on("ready", () => {
 
     function discoRole() {
+    const errlogchannel = client.channels.cache.get('759152662141992990');
     let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
     roles.forEach((role) => {
       let guild = client.guilds.cache.get("618307548465987596")
       let theRole = guild.roles.cache.get(`${role}`);
       theRole.edit({color: random}).catch(e => {
-        return message.channel.send(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
+        return errlogchannel.send(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
       });
     });
   }
