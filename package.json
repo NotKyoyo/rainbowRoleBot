@@ -1,8 +1,8 @@
 {
   "name": "rainbow",
   "version": "1.0.0",
-  "description": "A simple rainbow bot discord + server change name.",
-  "main": "rainbow.js",
+  "description": "A simple rainbow bot discord",
+  "main": "index.js",
   "dependencies": {
     "discord.js": "^12.3.1"
   },
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PrinceRpz23/-.git"
+    "url": "git+https://github.com/Arlonnn/rainbowRoleBot.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Arlon",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PrinceRpz23/-/issues"
+    "url": "https://github.com/Arlonnn/rainbowRoleBot/issues"
   },
-  "homepage": "https://github.com/PrinceRpz23/-#readme"
+  "homepage": "https://github.com/Arlonnn/rainbowRoleBot/blob/master/README.md"
 }
