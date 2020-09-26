@@ -5,3 +5,4 @@
 # Setup
 - Fork this repo using `git clone https://github.com/Arlonnn/rainbowRoleBot`
 - Fill the `config.json` and fill the log channel and guild id in `index.js`
+- Can also use `heroku` to host it.
