@@ -41,12 +41,24 @@ client.on("message", message =>{
 })
 
 client.on("message", message => {
+    
+function rainbowRole() {
+    const errlogchannel = client.channels.cache.get('759152662141992990');
+    let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    roles.forEach((role) => {
+      let guild = client.guilds.cache.get("618307548465987596")
+      let theRole = guild.roles.cache.get(`${role}`);
+      theRole.edit({color: random}).catch(e => {
+        return errlogchannel.send(":x: **Error:** The role you specified in the `config.json` is either not a role on this server, or his a role higher than the highest role that I have.");
+      });
+    });
+  }
  const logchannelll = client.channels.cache.get('759152662141992990');
 
 
   if(message.content.startsWith(prefix + "start")) {
     if(allowedUsers.includes(message.author.id)) {
-    setInterval(() => { discoRole(); }, config.ms);
+    setInterval(() => { rainbowRole(); }, config.ms);
     message.channel.send("```css\nDiscoing...```");
   } else {
     message.reply(`You do not have permission to use me.`);
