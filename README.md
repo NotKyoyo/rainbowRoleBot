@@ -1,6 +1,6 @@
 # Rainbow Role Bot
 
-# Note using Rainbow role bots can terminate you from using discord API or your whole account. Use it at your own risk. I'm not responsible for any further consequences.
+# Note using Rainbow role bots can terminate you from using discord API or your whole account. Use it at your own risk. I'm not responsible for any consequences.
 
 # Setup
 - Fork this repo using `git clone https://github.com/Arlonnn/rainbowRoleBot`
